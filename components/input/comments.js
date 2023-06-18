@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 
+import NewComment from './new-comment';
 import classes from './comments.module.css';
 import CommentList from './comment-list';
-import NewComment from './new-comment';
 
 function Comments(props) {
   const { eventId } = props;
@@ -41,7 +41,7 @@ function Comments(props) {
 
   return (
     <section className={classes.comments}>
-      <button onClick={toggleCommentsHandler}>
+      <button className={classes.comButton} onClick={toggleCommentsHandler}>
         {showComments ? 'Hide' : 'Show'} Comments
       </button>
       {showComments && <NewComment onAddComment={addCommentHandler} />}

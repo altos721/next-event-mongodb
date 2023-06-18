@@ -39,4 +39,15 @@
 
 .form button {
   background-color: white;
+  font: inherit;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  color: #03be9f;
+  border: 1px solid #03be9f;
+  cursor: pointer;
+}
+
+.form button:hover,
+.form button:active {
+  background-color: #dcfff9;
 }
